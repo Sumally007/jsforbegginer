@@ -62,16 +62,28 @@
 // items.forEach((item) => console.log(item));
 
 
-const ul = document.querySelector('.items');
+// const ul = document.querySelector('.items');
 
 // ul.remove();
 
-ul.firstElementChild.textContent = 'hello';
+// ul.firstElementChild.textContent = 'hello';
 
-ul.children[1].innerText = 'Brad';
+// ul.children[1].innerText = 'Brad';
 
-ul.lastElementChild.innerHTML = '<h1>hellow!</h1>';
+// ul.lastElementChild.innerHTML = '<h1>hellow!</h1>';
+
+// const btn = document.querySelector('.btn');
+
+// btn.style.background = 'red';
+
+
+
 
 const btn = document.querySelector('.btn');
 
-btn.style.background = 'red';
+btn.addEventListener('mouseout', (e) => {
+    e.preventDefault();
+    document.querySelector('#my-form').style.background = '#ccc';
+    document.querySelector('body').classList.add('bg-dark');
+    document.querySelector('.items').lastElementChild.innerHTML = '<h1>Hello</h1>';
+});
