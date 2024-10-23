@@ -57,6 +57,21 @@
 // console.log(document.querySelectorAll('.item'));
 
 
-const items = document.querySelectorAll('.item');
+// const items = document.querySelectorAll('.item');
 
-items.forEach((item) => console.log(item));
+// items.forEach((item) => console.log(item));
+
+
+const ul = document.querySelector('.items');
+
+// ul.remove();
+
+ul.firstElementChild.textContent = 'hello';
+
+ul.children[1].innerText = 'Brad';
+
+ul.lastElementChild.innerHTML = '<h1>hellow!</h1>';
+
+const btn = document.querySelector('.btn');
+
+btn.style.background = 'red';
